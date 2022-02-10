@@ -31,5 +31,10 @@ function generatePass() {
     }
     return password.join('')
 }
-console.log(asciiChars)
+
+function copyToClipboard(clickedID) {
+    copyText = document.getElementById(clickedID)
+    copyText.select();
+    navigator.clipboard.writeText(copyText.value)
+}
 
